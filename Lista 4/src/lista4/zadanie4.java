@@ -24,10 +24,10 @@ public class zadanie4 {
 		long d1=timeZone1.getRawOffset()/(1000*60*60);
 		long d2=timeZone2.getRawOffset()/(1000*60*60);
 
-		System.out.println(d1);
+		System.out.println("Los Angeles in UTC : " + d1);
 		
 		 
-		System.out.println(d2);
+		System.out.println("Warsaw in UTC : " + d2);
 		
 		
 		
@@ -41,9 +41,10 @@ public class zadanie4 {
 			d2+=timeZone2.getDSTSavings()/(1000*60*60);
 		}
 		
+		System.out.println("\n"+ "Considering the time change :");
 		System.out.println("Los Angeles UTC : " + d1);
-		System.out.println("Warsaw UTC : " + d2);
-		System.out.println("Róznica : " + (Math.abs(d1)+Math.abs(d2)));
+		System.out.println("Warsaw UTC : " + d2+ "\n");
+		System.out.println("Difference between time zones : " + (Math.abs(d1)+Math.abs(d2)));
 		
 		sc.close();
 	}
