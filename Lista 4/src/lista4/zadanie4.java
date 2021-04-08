@@ -11,9 +11,9 @@ public class zadanie4 {
 		
 		Scanner sc=new Scanner(System.in);
 		
-		String pattern ="dd.MM.yyyy";
+		String pattern ="dd.MM.yyyy hh:mm:ss";
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-		String input ="08.04.2021";
+		String input ="01.03.2021 18:00:00";
 		Date date = simpleDateFormat.parse(input);
 
 		
